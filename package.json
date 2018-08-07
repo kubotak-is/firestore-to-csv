@@ -1,0 +1,47 @@
+{
+  "name": "firestore-to-csv",
+  "version": "0.1.0",
+  "author": "kubotak @kubotak-is",
+  "bin": {
+    "firestore-to-csv": "./bin/run"
+  },
+  "bugs": "https://github.com/kubotak-is/firestore-to-csv/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "dotenv": "^6.0.0",
+    "firebase-admin": "^5.13.1",
+    "json2csv": "^4.2.0"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^4",
+    "eslint-config-oclif": "^1",
+    "mocha": "^5",
+    "nyc": "^12",
+    "rimraf": "^2.6.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/kubotak-is/firestore-to-csv",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "firestore-to-csv"
+  },
+  "repository": "kubotak-is/firestore-to-csv",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\""
+  }
+}
